@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!---- -->
+<!-- overflow je bitan da djeca ne bi ispadala iz roditelja, tj .sadrzaj, .lijevo, .desno divs is .wrapper diva -->
+<!-- HTML stil komentara smeta unutar style tagova -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>BH Needlework</title>
+<style>
+body{
+	background-color: rgb(220,208, 192);
+	margin: 30px 0 20px 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 1000px;
+	margin: 0px auto;
+	padding: 20px;
+	text-align: justify;
+	border-color: rgb(244,244,244);
+	border-style: ridge;
+	border-width: 5px;
+	background-color: rgb(232, 227, 220);
+	overflow: hidden; 
+}
+
+h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 2em;
+	font-weight: normal;
+	<!-- color: rgb(119, 111, 101);  ---> 
+	color: rgb(65, 65, 65);
+}
+
+.zaglavlje{
+	padding: 50px 0px 10px 50px;
+	text-align: center;
+}
+
+.menu{
+	border-bottom: 3px solid rgb(244,244,244); 
+	border-top: 3px solid rgb(244,244,244);
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px 20px 10px 20px;
+}
+
+.menu ul {
+	margin: 0px;
+	padding: 0 0 0 20px;
+	list-style: none;
+	text-align: center;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu a{
+	text-decoration: none;
+	color: rgb(100,100,100);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+	
+}
+
+.sadrzaj{
+	width: 1000px;
+	margin: 0px auto;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.lijevo{
+	padding: 0px 10px 0px 20px;
+	float: left;
+	width: 620px;
+}
+
+.lijevo h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	color: rgb(119, 111, 101);
+	border-bottom: 1px solid rgb(244,244,244); 
+}
+ 
+.desno{
+	padding: 0px 20px 0px 10px;
+	float: right;
+	width: 310px;
+	overflow: hidden;
+}
+
+.fixed{
+	position: fixed;
+	width: 310px;
+}
+.dugme{
+	border: 3px inset grey;
+	border-radius: 10%;
+	background-color: rgb(237, 226, 192);
+	text-align: center;
+	margin: 60px;
+	margin-bottom: 60px;
+}
+.dugme:hover{
+	border: 3px onset rgb(192, 178, 131);
+	border-radius: 10%;
+	background-color: lightgrey;
+	text-align: center;
+	margin: 60px;
+	margin-bottom: 60px;
+}
+
+.dugme:active{
+	border: 3px onset rgb(192, 178, 131);
+	border-radius: 10%;
+	background-color: rgb(237, 226, 192);
+	text-align: center;
+	margin: 60px;
+	margin-bottom: 60px;
+}
+
+.dugme a{
+	text-decoration: none;
+	color: rgb(100,100,100);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+}
+
+
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="zaglavlje">
+			<h1 id="pocetak">BH Needlework </h1>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#tipsnpatt">TIPS AND PATTERNS</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#bookshelf">BOOKSHELF</a></li>
+				<li><a href="#contactus">CONTACT US</a></li>
+			</ul>
+		</div>
+		<div class="sadrzaj">
+			<div class="lijevo">
+				<h2 id="home">HOME</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="tipsnpatt">TIPS AND PATTERNS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="gallery">GALLERY</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="bookshelf">BOOKSHELF</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="contactus">CONTACT US</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+			</div>
+			<div class="desno">
+				<div class="fixed">
+					<h2>ABOUT US</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+					<p class="dugme"><a href="#pocetak">Back to the top!</a></p>
+				</div>
+			</div>
+			
+	</div>
+	
+</body>
+</html>
