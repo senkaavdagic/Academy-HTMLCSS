@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!---- -->
+<!-- overflow je bitan da djeca ne bi ispadala iz roditelja, tj .sadrzaj, .lijevo, .desno divs is .wrapper diva -->
+<!-- HTML stil komentara smeta unutar style tagova  background-color: rgb(220,208, 192);-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>BH Needlework</title>
+<style>
+body{
+	background-color: rgb(220,208, 192);
+	margin: 30px 0 20px 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 1000px;
+	margin: 0px auto;
+	padding: 20px;
+	text-align: justify;
+	border-color: rgb(244,244,244);
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgb(232, 227, 220);
+	overflow: hidden; 
+}
+
+h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 2em;
+	font-weight: normal;
+	<!-- color: rgb(119, 111, 101);  ---> 
+	color: rgb(65, 65, 65);
+}
+
+.zaglavlje{
+	text-align: center;
+	height: 250px;
+	margin: 0px auto;
+	background: url(images/background.jpg) no-repeat left top;
+	border: 2px solid rgb(244,244,244);
+}
+
+.menu{
+	border: 2px solid rgb(244,244,244);
+	background-color: rgb(244,244,244);
+	margin: 0px auto;
+	padding: 20px 20px 20px 20px;
+}
+
+.menu ul {
+	margin: 0px;
+	padding: 0 0 0 20px;
+	list-style: none;
+	text-align: center;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu a{
+	text-decoration: none;
+	color: rgb(100, 100, 100);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+	
+}
+
+.menu a:hover{
+	text-decoration: none;
+	color: rgb(58, 59, 58);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+	
+}
+
+.sadrzaj{
+	width: 1000px;
+	margin: 0px auto;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.lijevo{
+	padding: 0px 10px 0px 20px;
+	float: left;
+	width: 620px;
+}
+
+.lijevo h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	color: rgb(119, 111, 101);
+	border-bottom: 1px solid rgb(244,244,244); 
+}
+ 
+.desno{
+	padding: 0px 20px 0px 10px;
+	float: right;
+	width: 310px;
+	overflow: hidden;
+}
+
+.fixed{
+	position: fixed;
+	width: 310px;
+}
+.dugme{
+	border: 3px inset grey;
+	border-radius: 10%;
+	background-color: rgb(220,208, 192);
+	text-align: center;
+	margin: 60px;
+	margin-bottom: 60px;
+}
+.dugme:hover{
+	border: 3px onset rgb(192, 178, 131);
+	border-radius: 10%;
+	background-color: lightgrey;
+	text-align: center;
+	margin: 60px;
+	margin-bottom: 60px;
+}
+
+.dugme:active{
+	border: 3px onset rgb(192, 178, 131);
+	border-radius: 10%;
+	background-color: rgb(220,208, 192);
+	text-align: center;
+	margin: 60px;
+	margin-bottom: 60px;
+}
+
+.dugme a{
+	text-decoration: none;
+	color: rgb(100,100,100);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+}
+
+
+
+figure{
+  width: 28%;
+  text-align: center;
+  float: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+figure img {
+    vertical-align: top;
+	width: 100%;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+.slikeredovi{
+	position:relative;
+	overflow: hidden;
+}
+
+.knjige{
+	overflow: hidden;
+	margin: 7px 0px 7px 0px;
+	padding: 0px 0px 7px 0px;
+	border-bottom: thin silver solid;
+}
+
+.knjige img{
+	float: left;
+	margin: 4px 10px 0px 0px; 
+	border: 1px solid silver;
+}
+
+#posljednji {
+	border: none;
+	margin-bottom: 20px;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="zaglavlje">
+			<h1 id="pocetak">BH Needlework </h1>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#tipsnpatt">TIPS AND PATTERNS</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#bookshelf">BOOKSHELF</a></li>
+				<li><a href="#contactus">CONTACT US</a></li>
+			</ul>
+		</div>
+		<div class="sadrzaj">
+			<div class="lijevo">
+				<h2 id="home">HOME</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="tipsnpatt">TIPS AND PATTERNS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="gallery">GALLERY</h2>
+				<div class="slikeredovi">
+						<figure class="figleft">
+						<img src="images/4.jpg" width=200>
+						<figcaption>Cable crochet</figcaption>
+					</figure>
+					
+					<figure class="figcenter">
+						<img src="images/2.jpg" width=200>
+						<figcaption>Winter jacket</figcaption>
+					</figure>
+					
+					<figure class="figright">
+						<img src="images/3.jpg" width=200>
+						<figcaption>'Join as you go' afghan</figcaption>
+					</figure>
+					<figure class="figleft">
+						<img src="images/6.jpg" width=200>
+						<figcaption>Chari Hat</figcaption>
+					</figure>
+					
+					<figure class="figcenter">
+						<img src="images/7.jpg" width=200>
+						<figcaption>Honey Bee Blanket </figcaption>
+					</figure>
+					
+					<figure class="figright">
+						<img src="images/8.jpg" width=200>
+						<figcaption>Erika Knight slippers</figcaption>
+					</figure>
+				</div>
+			
+				<h2 id="bookshelf">BOOKSHELF</h2>
+				<p>Must haves for every avid needlecrafter! </p>
+				<div class="knjige">
+					<img src="images/erika1.jpg" width=200>
+					<p>"Simple Crocheting: A Complete How-to-Crochet Workshop with 20 Projects"  by Erika Knight<br><a href="https://www.amazon.com/Simple-Crocheting-Complete-How-Crochet/dp/1250016215/ref=sr_1_1?s=books&ie=UTF8&qid=1506085504&sr=1-1&keywords=erika+knight" target="_blank">Simple Crocheting: A Complete How-to-Crochet Workshop with 20 Projects</a></p>
+				</div>
+					<div class="knjige">
+					<img src="images/crochetaz.jpg" width=200>
+					<p>"A to Z of Crochet: The Ultimate Guide for the Beginner to Advanced CrocheterMay"  by Martingale<br><a href="https://www.amazon.com/Crochet-Ultimate-Beginner-Advanced-Crocheter/dp/156477998X/ref=sr_1_1?s=books&ie=UTF8&qid=1506086578&sr=1-1&keywords=crochet" target="_blank">A to Z of Crochet: The Ultimate Guide for the Beginner to Advanced Crocheter</a></p>
+				</div>
+					<div class="knjige">
+					<img src="images/erika2.jpg" width=200>
+					<p>"Simple Knitting: A Complete How-to-Knit Workshop with 20 Projects"  by Erika Knight<br><a href="https://www.amazon.com/Simple-Knitting-Complete-How-Knit/dp/0312668333/ref=sr_1_3?s=books&ie=UTF8&qid=1506086860&sr=1-3&keywords=erika+knight" target="_blank">Simple Knitting: A Complete How-to-Knit Workshop with 20 Projects</a></p>
+				</div>
+					<div class="knjige" id="posljednji">
+					<img src="images/vogue.jpg" width=200>
+					<p>"Vogue Knitting: The Ultimate Knitting Book"  by Vogue Knitting Magazine Editors (Author)<br><a href="https://www.amazon.com/Vogue-Knitting-Ultimate-Book/dp/193154316X/ref=sr_1_1?s=books&ie=UTF8&qid=1506086958&sr=1-1&keywords=vogue+knitting+the+ultimate+knitting+book" target="_blank">Vogue Knitting: The Ultimate Knitting Book</a></p>
+				</div>
+				<h2 id="contactus">CONTACT US</h2>
+				<p>Milana Preloga 12 <br>
+				Sarajevo, Bosnia and Herzegovina <br>
+				contact@academy387.com <br>
+				+387 33 941 261 </p>
+			</div>
+			<div class="desno">
+					<h2>ABOUT US</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
+				<div class="fixed">
+					<p class="dugme"><a href="#pocetak">Back to the top!</a></p>
+				</div>
+			</div>
+			
+	</div>
+	
+</body>
+</html>
