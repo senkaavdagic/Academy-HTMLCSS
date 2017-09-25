@@ -8,6 +8,7 @@
 <title>BH Needlework</title>
 <style>
 body{
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	background-color: rgb(220,208, 192);
 	margin: 30px 0 20px 0;
 	padding: 0;
@@ -28,12 +29,27 @@ body{
 h1{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-style: normal;
-	font-size: 2em;
+	font-size: 2.3em;
 	font-weight: normal;
 	<!-- color: rgb(119, 111, 101);  ---> 
 	color: rgb(65, 65, 65);
+	text-align: center;
 }
 
+h3{
+	color: rgb(80, 80, 80);;
+	font-style: normal;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+p{
+	line-height: 1.5;
+	color: rgb(100, 100, 100);;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	font-family:"Book Antiqua", Palatino
+}
 .zaglavlje{
 	text-align: center;
 	height: 250px;
@@ -101,42 +117,49 @@ h1{
 	color: rgb(119, 111, 101);
 	border-bottom: 1px solid rgb(244,244,244); 
 }
- 
+#intro{
+	text-align: center;
+	line-height: 2;
+	margin: 20px;
+}
+
 .desno{
 	padding: 0px 20px 0px 10px;
 	float: right;
-	width: 310px;
+	width: 260px;
 	overflow: hidden;
 }
-
+.desno h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: rgb(70, 70, 70);
+}
 .fixed{
 	position: fixed;
 	width: 310px;
 }
 .dugme{
-	border: 3px inset grey;
-	border-radius: 10%;
-	background-color: rgb(220,208, 192);
+	border: 3px solid silver;
+	background-color: rgb(244,244,244);
 	text-align: center;
-	margin: 60px;
-	margin-bottom: 60px;
+	padding: 5px;
+	margin: 30px;
 }
+
 .dugme:hover{
-	border: 3px onset rgb(192, 178, 131);
-	border-radius: 10%;
-	background-color: lightgrey;
+	border: 4px solid rgb(244,244,244);
+	background-color: rgb(226, 222, 222);
 	text-align: center;
-	margin: 60px;
-	margin-bottom: 60px;
+	margin: 30px;
 }
 
 .dugme:active{
-	border: 3px onset rgb(192, 178, 131);
-	border-radius: 10%;
-	background-color: rgb(220,208, 192);
+	border: 4px solid rgb(244,244,244);
+	background-color: rgb(226, 222, 222);
 	text-align: center;
-	margin: 60px;
-	margin-bottom: 60px;
+	margin: 30px;
 }
 
 .dugme a{
@@ -194,6 +217,12 @@ figure figcaption {
 	margin-bottom: 20px;
 }
 
+.ha{
+	font-style: italic;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
 
 </style>
 </head>
@@ -213,10 +242,17 @@ figure figcaption {
 		</div>
 		<div class="sadrzaj">
 			<div class="lijevo">
-				<h2 id="home">HOME</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h2 id="home">ABOUT US</h2>
+				<p id="intro"> HTML je programski jezik koji predstavlja osnovu za bilo kakvo web programiranje. Ovo je sazetak prezentovanih sadrzaja i finalni rad. Prikazuje korištenje osnovnih HTML tag-ova, ubacivanje slika na web stranicu, aktivnih hyperlink-ova, uređivanje pozadine i teksta, komentara, CSS formatiranje sadrzaja. </p>
 				<h2 id="tipsnpatt">TIPS AND PATTERNS</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
+				<h3>Clover Pom Pom Maker </h3>
+				<p>I’ve done my fair share of yarn pom pom making in the past as I love adding pom poms to hats  and we hung yarn pom poms from manzanita trees as decor for our baby shower two years ago!  We cut out two doughnut shapes out of cardboard to serve as our pom pom makers, and they were quite effective although the cardboard started to fray and become flimsy over time. READ THE FULL ARTICLE <a href="http://www.allaboutami.com/cloverpompommaker/" target="_blank" class="ha">HERE</a>.</p>
+				<h3>How to Crochet Purse Handles</h3>
+				<p>When I first learned how to crochet as a young girl, I loved making everything from stuffed animals to purses for myself!  I remember making a beautiful purse with crocheted handles but much to my dismay, the handles stretched quite a bit over time and soon they were too long for my liking.  Crochet handles have the potential to stretch and lose its shape over time depending on the type of stitch used and if they are worked row by row lengthwise.  In this tutorial, I will show you how to crochet stylish handles for your crochet purses and how to minimize the amount of stretching!. READ THE FULL ARTICLE <a href="http://www.allaboutami.com/crochet-purse-handles/" target="_blank" class="ha">HERE</a>.</p>
+				<h3>Myla Doll</h3>
+				<p>After seeing the gorgeous handmade dolls by mother-daughter duo Rosemary and Erinna of Bubbles & Bongo (see my Craft Chat with them HERE), I was inspired to crochet my own doll.  Prior to this, I had mostly crocheted animals, although my very first amigurumi original design was the Chinese New Year Doll.  I was interested in crocheting a larger doll using a popular book called “My Crochet Doll” by Parisian artist Isabelle Kessedjian.  Ryan and I wanted to crochet a special doll for Myla as a gift to her when she started preschool two years ago, and we will show you what we made!  READ THE FULL ARTICLE <a href="http://www.allaboutami.com/myla-doll/" target="_blank" class="ha">HERE</a>.</p>
+				<h3>Star Stitch Purse</h3>
+				<p>After designing my Star Stitch Pouches almost exactly a year ago, I knew what I wanted to tackle next: a Star Stitch PURSE!  I adore the modern look and texture of star stitches, and it is very addictive working them in a round.  I wanted to use the same beautiful mercerized cotton I used with my pouches as they really help show off the crisp definition of the stitches: Lion Brand Yarn’s 24/7 Cotton!  I also used this yarn for my Star Stitch Cup Cozies HERE.  I will forever associate star stitches with 24/7 Cotton!  To make my purse sturdier, I held two strands of yarn together while crocheting! READ THE FULL ARTICLE <a href="http://www.allaboutami.com/star-stitch-purse/" target="_blank" class="ha">HERE</a>.</p>
 				<h2 id="gallery">GALLERY</h2>
 				<div class="slikeredovi">
 						<figure class="figleft">
@@ -250,7 +286,7 @@ figure figcaption {
 				</div>
 			
 				<h2 id="bookshelf">BOOKSHELF</h2>
-				<p>Must haves for every avid needlecrafter! </p>
+				<p>Knit and crochet loves! </p>
 				<div class="knjige">
 					<img src="images/erika1.jpg" width=200>
 					<p>"Simple Crocheting: A Complete How-to-Crochet Workshop with 20 Projects"  by Erika Knight<br><a href="https://www.amazon.com/Simple-Crocheting-Complete-How-Crochet/dp/1250016215/ref=sr_1_1?s=books&ie=UTF8&qid=1506085504&sr=1-1&keywords=erika+knight" target="_blank">Simple Crocheting: A Complete How-to-Crochet Workshop with 20 Projects</a></p>
@@ -274,8 +310,8 @@ figure figcaption {
 				+387 33 941 261 </p>
 			</div>
 			<div class="desno">
-					<h2>ABOUT US</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
+					<h2>HELLO!</h2>
+					<p> I'm Senka. Welcome to my blog! </p>
 				<div class="fixed">
 					<p class="dugme"><a href="#pocetak">Back to the top!</a></p>
 				</div>
