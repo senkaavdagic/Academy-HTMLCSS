@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <!---- -->
+<!-- overflow je bitan da djeca ne bi ispadala iz roditelja, tj .sadrzaj, .lijevo, .desno divs is .wrapper diva -->
+<!-- HTML stil komentara smeta unutar style tagova  background-color: rgb(220,208, 192);  rgb(215, 206, 199)   h2 -->
 <html>
 <head>
 <meta charset="utf-8">
-<title>BH Needlework</title>
+<title>Needlecrafts</title>
 <style>
 body{
-	background-color: rgb(220,208, 192);
+	background-color: rgb(215, 206, 199);
+	margin: 30px 0 20px 0;
+	padding: 0;
 }
 
 .wrapper{
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 3%;
-	margin-bottom: 20px;
+	width: 1000px;
+	margin: 0px auto;
+	padding: 20px;
 	text-align: justify;
-	clear: both;
 	border-color: rgb(244,244,244);
-	border-style: ridge;
-	border-width: 5px;
-	background-color: rgb(232, 227, 220);
+	border-style: solid;
+	border-width: 2px;
+	background-color: rgb(234, 226, 220);
+	overflow: hidden; 
 }
 
 h1{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-style: normal;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: normal;
-	<!-- color: rgb(119, 111, 101);  ---> 
-	color: rgb(65, 65, 65);
+	color: rgb(150, 58, 76);
+	text-align: center;
+	padding: 55px 200px 55px 500px;
+}
+
+h3{
+	color: rgb(80, 80, 80);;
+	font-style: normal;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+p{
+	line-height: 1.5;
+	color: rgb(100, 100, 100);;
+	font-style: normal;
+	font-size: 0.9em;
+	font-weight: normal;
+	font-family: Verdana, Geneva, sans-serif;
 }
 .zaglavlje{
-	padding: 50px 0px 10px 50px;
 	text-align: center;
+	height: 330px;
+	margin: 0px auto;
+	background: url(images/background1.jpg) no-repeat left top;
+	border: 2px solid rgb(244,244,244);
 }
 
 .menu{
-	border-bottom: 1px solid rgb(244,244,244); 
-	border-top: 1px solid rgb(244,244,244);
-	margin-left: 3px;
-	margin-right: 3px;
-	padding: 0px 20px 0px 20px;
+	border: 2px solid rgb(244,244,244);
+	background-color: rgb(244,244,244);
+	margin: 0px auto;
+	padding: 20px 20px 20px 20px;
 }
 
 .menu ul {
@@ -56,7 +77,17 @@ h1{
 
 .menu a{
 	text-decoration: none;
-	color: rgb(100,100,100);
+	color: rgb(100, 100, 100);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+	
+}
+
+.menu a:hover{
+	text-decoration: none;
+	color: rgb(58, 59, 58);
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-style: normal;
 	font-size: 1em;
@@ -65,34 +96,237 @@ h1{
 }
 
 .sadrzaj{
-}
-.pokretni{
+	width: 1000px;
+	margin: 0px auto;
+	padding-top: 20px;
+	overflow: hidden;
 }
 
-.footer{
+.lijevo{
+	padding: 0px 10px 0px 20px;
+	float: left;
+	width: 620px;
 }
+
+.lijevo h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	color: rgb(119, 111, 101);
+	border-bottom: 2px solid rgb(244, 244, 244); 
+}
+#intro{
+	text-align: center;
+	line-height: 2;
+	margin: 20px;
+}
+
+.desno{
+	padding: 0px 20px 0px 10px;
+	float: right;
+	width: 310px;
+	overflow: hidden;
+}
+.desno h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: rgb(70, 70, 70);
+}
+.fixed{
+	position: fixed;
+	width: 310px;
+}
+
+.dugme{
+	border-radius: 5%;
+	background-color: rgb(156, 156, 156);
+	text-align: center;
+	width: 26%;
+}
+
+.dugme:hover{
+	border-radius: 5%;
+	background-color: rgb(106, 106, 106);
+	text-align: center;
+	padding: 0 16px 0 16px;
+	width: 26%;
+}
+
+.dugme:active{
+	border-radius: 5%;
+	background-color: rgb(106, 106, 106);
+	text-align: center;
+	padding: 0 16px 0 16px;
+	width: 26%;
+}
+
+.dugme a{
+	text-decoration: none;
+	color: rgb(100,100,100);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-size: 1em;
+	padding: 14px 30px 10px 12px; 
+	width: 30%;
+}
+
+.dugme img{
+	position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+figure{
+  width: 28%;
+  text-align: center;
+  float: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+figure img {
+    vertical-align: top;
+	width: 100%;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+.slikeredovi{
+	position:relative;
+	overflow: hidden;
+}
+
+.knjige{
+	overflow: hidden;
+	margin: 7px 0px 7px 0px;
+	padding: 0px 0px 7px 0px;
+	border-bottom: thin silver solid;
+}
+
+.knjige img{
+	float: left;
+	margin: 4px 10px 0px 0px; 
+	border: 1px solid silver;
+}
+
+#posljednji {
+	border: none;
+	margin-bottom: 20px;
+}
+
+.ha{
+	font-style: italic;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
 </style>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="zaglavlje">
-			<h1>BH Needlework </h1>
+			<h1 id="pocetak">My Needlecrafts </h1>
 		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="#">ABOUT US</a></li>
-				<li><a href="#">TIPS AND PATTERNS</a></li>
-				<li><a href="#">GALLERY</a></li>
-				<li><a href="#">BOOKSHELF</a></li>
-				<li><a href="#">CONTACT US</a></li>
+				<li><a href="#home">ABOUT US</a></li>
+				<li><a href="#tipsnpatt">TIPS AND PATTERNS</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#bookshelf">BOOKSHELF</a></li>
+				<li><a href="#contactus">CONTACT US</a></li>
 			</ul>
 		</div>
 		<div class="sadrzaj">
-		</div>
-		<div class="pokretni">
-		</div>
-		<div class="footer">
-		</div>
+			<div class="lijevo">
+				<h2 id="home">ABOUT US</h2>
+				<p id="intro"> HTML je programski jezik koji predstavlja osnovu za bilo kakvo web programiranje. Ovo je sazetak prezentovanih sadrzaja i finalni rad. Prikazuje korištenje osnovnih HTML tag-ova, ubacivanje slika na web stranicu, aktivnih hyperlink-ova, uređivanje pozadine i teksta, komentara, CSS formatiranje sadrzaja. </p>
+				<h2 id="tipsnpatt">TIPS AND PATTERNS</h2>
+				<h3>Clover Pom Pom Maker </h3>
+				<p>I’ve done my fair share of yarn pom pom making in the past as I love adding pom poms to hats  and we hung yarn pom poms from manzanita trees as decor for our baby shower two years ago!  We cut out two doughnut shapes out of cardboard to serve as our pom pom makers, and they were quite effective although the cardboard started to fray and become flimsy over time. READ THE FULL ARTICLE <a href="http://www.allaboutami.com/cloverpompommaker/" target="_blank" class="ha">HERE</a>.</p>
+				<h3>How to Crochet Purse Handles</h3>
+				<p>When I first learned how to crochet as a young girl, I loved making everything from stuffed animals to purses for myself!  I remember making a beautiful purse with crocheted handles but much to my dismay, the handles stretched quite a bit over time and soon they were too long for my liking.  Crochet handles have the potential to stretch and lose its shape over time depending on the type of stitch used and if they are worked row by row lengthwise.  In this tutorial, I will show you how to crochet stylish handles for your crochet purses and how to minimize the amount of stretching!. READ THE FULL ARTICLE <a href="http://www.allaboutami.com/crochet-purse-handles/" target="_blank" class="ha">HERE</a>.</p>
+				<h3>Myla Doll</h3>
+				<p>After seeing the gorgeous handmade dolls by mother-daughter duo Rosemary and Erinna of Bubbles & Bongo, I was inspired to crochet my own doll.  Prior to this, I had mostly crocheted animals, although my very first amigurumi original design was the Chinese New Year Doll.  I was interested in crocheting a larger doll using a popular book called “My Crochet Doll” by Parisian artist Isabelle Kessedjian.  Ryan and I wanted to crochet a special doll for Myla as a gift to her when she started preschool two years ago, and we will show you what we made!  READ THE FULL ARTICLE <a href="http://www.allaboutami.com/myla-doll/" target="_blank" class="ha">HERE</a>.</p>
+				<h3>Star Stitch Purse</h3>
+				<p>After designing my Star Stitch Pouches almost exactly a year ago, I knew what I wanted to tackle next: a Star Stitch PURSE!  I adore the modern look and texture of star stitches, and it is very addictive working them in a round.  I wanted to use the same beautiful mercerized cotton I used with my pouches as they really help show off the crisp definition of the stitches: Lion Brand Yarn’s 24/7 Cotton!  I also used this yarn for my Star Stitch Cup Cozies.  I will forever associate star stitches with 24/7 Cotton!  To make my purse sturdier, I held two strands of yarn together while crocheting! READ THE FULL ARTICLE <a href="http://www.allaboutami.com/star-stitch-purse/" target="_blank" class="ha">HERE</a>.</p>
+				<h2 id="gallery">GALLERY</h2>
+				<div class="slikeredovi">
+						<figure class="figleft">
+						<img src="images/4.jpg" width=200>
+						<figcaption>Cable crochet</figcaption>
+					</figure>
+					
+					<figure class="figcenter">
+						<img src="images/2.jpg" width=200>
+						<figcaption>Winter jacket</figcaption>
+					</figure>
+					
+					<figure class="figright">
+						<img src="images/3.jpg" width=200>
+						<figcaption>'Join as you go' afghan</figcaption>
+					</figure>
+					<figure class="figleft">
+						<img src="images/6.jpg" width=200>
+						<figcaption>Chari Hat</figcaption>
+					</figure>
+					
+					<figure class="figcenter">
+						<img src="images/7.jpg" width=200>
+						<figcaption>Honey Bee Blanket </figcaption>
+					</figure>
+					
+					<figure class="figright">
+						<img src="images/8.jpg" width=200>
+						<figcaption>Erika Knight slippers</figcaption>
+					</figure>
+				</div>
+			
+				<h2 id="bookshelf">BOOKSHELF</h2>
+				<p>Knit and crochet loves! </p>
+				<div class="knjige">
+					<img src="images/erika1.jpg" width=200>
+					<p>"Simple Crocheting: A Complete How-to-Crochet Workshop with 20 Projects"  by Erika Knight<br><a href="https://www.amazon.com/Simple-Crocheting-Complete-How-Crochet/dp/1250016215/ref=sr_1_1?s=books&ie=UTF8&qid=1506085504&sr=1-1&keywords=erika+knight" target="_blank">Simple Crocheting: A Complete How-to-Crochet Workshop with 20 Projects</a></p>
+				</div>
+					<div class="knjige">
+					<img src="images/crochetaz.jpg" width=200>
+					<p>"A to Z of Crochet: The Ultimate Guide for the Beginner to Advanced CrocheterMay"  by Martingale<br><a href="https://www.amazon.com/Crochet-Ultimate-Beginner-Advanced-Crocheter/dp/156477998X/ref=sr_1_1?s=books&ie=UTF8&qid=1506086578&sr=1-1&keywords=crochet" target="_blank">A to Z of Crochet: The Ultimate Guide for the Beginner to Advanced Crocheter</a></p>
+				</div>
+					<div class="knjige">
+					<img src="images/erika2.jpg" width=200>
+					<p>"Simple Knitting: A Complete How-to-Knit Workshop with 20 Projects"  by Erika Knight<br><a href="https://www.amazon.com/Simple-Knitting-Complete-How-Knit/dp/0312668333/ref=sr_1_3?s=books&ie=UTF8&qid=1506086860&sr=1-3&keywords=erika+knight" target="_blank">Simple Knitting: A Complete How-to-Knit Workshop with 20 Projects</a></p>
+				</div>
+					<div class="knjige" id="posljednji">
+					<img src="images/vogue.jpg" width=200>
+					<p>"Vogue Knitting: The Ultimate Knitting Book"  by Vogue Knitting Magazine Editors (Author)<br><a href="https://www.amazon.com/Vogue-Knitting-Ultimate-Book/dp/193154316X/ref=sr_1_1?s=books&ie=UTF8&qid=1506086958&sr=1-1&keywords=vogue+knitting+the+ultimate+knitting+book" target="_blank">Vogue Knitting: The Ultimate Knitting Book</a></p>
+				</div>
+				<h2 id="contactus">CONTACT US</h2>
+				<p>Milana Preloga 12 <br>
+				Sarajevo, Bosnia and Herzegovina <br>
+				contact@academy387.com <br>
+				+387 33 941 261 </p>
+			</div>
+			<div class="desno">
+					<h2>HELLO!</h2>
+					<p> I'm Senka. Welcome to my blog! </p>
+				<div class="fixed">
+					<div class="dugme"><a href="#pocetak"><img src="images/arrow-double_up2.png" width=60></a></div>
+				</div>
+			</div>
+			
 	</div>
+	
 </body>
 </html>
