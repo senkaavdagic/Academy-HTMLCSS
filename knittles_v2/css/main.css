@@ -1,0 +1,105 @@
+body, html {
+	height: 100vh;
+}
+body{
+	font-family: sans-serif;
+	color: #2f332f;
+	display: grid;
+	grid-template-rows: auto 50px;
+	grid-template-columns: 300px 1fr;
+	grid-template-areas: 
+		"header bottom"
+		"logo right"
+	height: 100vh;
+}
+
+.header-grid {
+	display: grid;
+	grid-template-rows: 50px;
+	
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	background-image: url(../images/line.svg);
+}
+
+header#logo {
+	grid-area: logo;
+}
+
+header nav {
+	grid-area: right;
+}
+/*
+header {
+	background-image: url(../images/line.svg);
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	grid-template-rows: 51px;
+	position: fixed;
+	background-color: white;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}*/
+	
+nav {
+	display: flex;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: #2f332f;
+	text-transform: uppercase;
+}
+
+nav ul li {
+	display: inline-block; 
+	padding: 0;
+	position: apsolute;
+	height: 100%
+}
+nav ul li a {
+	padding: 0 20px;
+	height: 100%;
+	display: block;
+}
+
+nav ul li a:hover {
+	background-image: url(../images/highlight.svg);
+}
+
+ul {
+	list-style-type: none;
+	height: 100%;
+	position: apsolute;
+	
+}
+
+
+.hero {
+	overflow: auto;
+	display: grid;
+	grid-template-columns: 60%;
+	grid-template-rows: 400px;
+	top: 100px;
+	padding: 10px;
+	margin: auto;
+}
+
+footer {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	border-color: #b6c2b6;
+	padding: 5px 5px;
+	display: grid;
+	grid-template-columns: 76% auto;
+	grid-template-rows: 80px;
+	bottom: 0;
+}
+

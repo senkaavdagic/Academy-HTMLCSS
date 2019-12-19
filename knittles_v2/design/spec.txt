@@ -1,0 +1,4 @@
+Color pallett: 
+font-color (main): color: #2f332f;
+border-color: #b6c2b6;
+ackground-color: rgba(76, 76, 77, 0.3); 
